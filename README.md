@@ -1,3 +1,3 @@
 # Data Structure And Algorithms
 
-These are the challenges from NeetCode and the it also has practice folder for those challenges in it.
+These are the challenges from NeetCode and it also has practice folder for those challenges in it.
