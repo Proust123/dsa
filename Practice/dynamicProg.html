@@ -2527,28 +2527,28 @@
         //     return res
         // }
 
-        // function maxPathSum(root) {
-        //     let res = 0
+        function maxPathSum(root) {
+            let res = 0
 
-        //     function solve(node) {
-        //         if(node === null) {
-        //             return 0
-        //         }
+            function solve(node) {
+                if(node === null) {
+                    return 0
+                }
 
-        //         let left = solve(node.left)
-        //         let right = solve(node.right)
+                let left = solve(node.left)
+                let right = solve(node.right)
             
-        //         let temp = Math.max(Math.max(left, right) + node.val, node.val)
-        //         let ans = Math.max(temp, (left + right + node.val))
+                let temp = Math.max(Math.max(left, right) + node.val, node.val)
+                let ans = Math.max(temp, (left + right + node.val))
 
-        //         res = Math.max(res, ans)
+                res = Math.max(res, ans)
 
-        //         return temp
-        //     }
-        //     solve(root)
+                return temp
+            }
+            solve(root)
 
-        //     return res
-        // }
+            return res
+        }
         
         
         console.log(maxSum(root));
